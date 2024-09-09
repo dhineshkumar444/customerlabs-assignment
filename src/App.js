@@ -48,10 +48,7 @@ function App() {
         [schema.value]: schema.label,
       })),
     };
-  
-    // Log the payload to verify it's correct
 
-  
     axios
       .post("https://thingproxy.freeboard.io/fetch/https://webhook.site/5c128ab7-107d-4202-88ec-5bc100aeb87e", payload, {
         headers: {
@@ -66,7 +63,6 @@ function App() {
       });
   };
   
-
   return (
     <div className="App">
       <button onClick={openPopup}>Save segment</button>
@@ -75,7 +71,6 @@ function App() {
         <div className="popup">
           <div className="popup-content">
             <h3>Save Segment</h3>
-
             <label>Segment Name:</label>
             <input
               type="text"
