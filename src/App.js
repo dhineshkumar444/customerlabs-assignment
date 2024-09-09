@@ -50,7 +50,7 @@ function App() {
     };
   
     // Log the payload to verify it's correct
-    console.log('Payload being sent:', payload);
+
   
     axios
       .post("https://thingproxy.freeboard.io/fetch/https://webhook.site/5c128ab7-107d-4202-88ec-5bc100aeb87e", payload, {
